@@ -8,7 +8,7 @@
 ```
 
 ```{warning}
-This is a quick start guide for Ansible.
+This is a quick start guide for Ansible and is under development.
 ```
 
 ```{toctree}
@@ -17,4 +17,5 @@ This is a quick start guide for Ansible.
 
 Ansible introduction <book/introduction>
 book/ansible-architecture
+book/gns3-lab
 ```
