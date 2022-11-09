@@ -18,4 +18,5 @@ This is a quick start guide for Ansible and is under development.
 Ansible introduction <book/introduction>
 book/ansible-architecture
 book/gns3-lab
+book/installation
 ```
