@@ -14,4 +14,7 @@ This is a quick start guide for Ansible.
 ```{toctree}
 :caption: 'Table of Contents:'
 :maxdepth: 2
+
+Ansible introduction <book/introduction>
+book/ansible-architecture
 ```
