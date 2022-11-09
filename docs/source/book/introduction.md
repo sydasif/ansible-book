@@ -1,4 +1,6 @@
-# What is Ansible?
+# Introduction
+
+## What is Ansible?
 
 Ansible is a configuration management system that automates and simplifies the configuration, maintenance, and deployment of servers and software, and orchestrates more advanced IT tasks such as continuous deployments or zero downtime rolling updates. Ansible started as an open-source project, now owned by RedHat.
 
@@ -19,3 +21,22 @@ Some network equipment supports other configuration management systems (allows y
 - Sending commands to devices
 
 The modules and what Ansible refers to as the playbooks are similar between server modules and network modules, with some differences.
+
+## Why Ansible?
+
+- Ansible uses a simple syntax written in YAML called playbook.
+- Ansible is Lightweight.
+- Agentless: Connect with SSH, WinRm (Windows Remote Management) and more.
+- RedHat Provided Ansible Tower (GUI)
+- Powerful and Flexible: Ansible has powerful features that enable you to model even the most complex IT workflow.
+- Efficient: No extra software on your server, which means more resources for your applications.
+- Idempotent: Ansible will not change the device’s state unless it needs to change its setting to reach the desired state.
+
+## Ansible Use Cases
+
+- Provisioning
+- Configuration Management
+- Application Deployment
+- Continuous Delivery
+- Security Automation
+- Orchestration
