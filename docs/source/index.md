@@ -7,7 +7,7 @@
 :relative-images:
 ```
 
-```{warning
+```{warning}
 This is a quick start guide for Ansible.
 ```
 
