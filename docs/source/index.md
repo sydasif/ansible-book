@@ -19,4 +19,5 @@ Ansible introduction <book/introduction>
 book/ansible-architecture
 book/gns3-lab
 book/installation
+book/inventory
 ```
