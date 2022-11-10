@@ -50,6 +50,16 @@ The flags in this command set seven values:
 - the module (-m, the ansible module to run)
 - an extra variable ( -e, in this case, setting the network OS value)
 
+## Ansible modules
+
+A large number of modules are also installed alongside the installation of Ansible. Modules are responsible for the actions that Ansible executes on managed nodes. Furthermore, each module is responsible for a specific task. Modules can be run individually, in ad-hoc commands, or assembled into a particular job (play) and then into a playbook.
+
+For example, we have already executed ad-hoc commands using the ios_command module and passed an argument.
+
+`ansible 9.9.9.101 -m ios_command -a "commands='sh ip int br'"`
+
+Ansible modules are generally idempotent. This means that the module can be executed as many times as desired, but the module will only make changes if the system is not in the desired state.
+
 ## Ansible Raw module
 
 The raw module is the module that doesn’t translate our commands (not going through the module subsystem), Ansible purely transfer our commands on remote devices via SSH. A common case is installing python on a system without python installed by default or devices such as routers that do not have any Python installed. The raw module is mainly used for monitoring and troubleshooting.
