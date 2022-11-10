@@ -20,4 +20,5 @@ book/ansible-architecture
 book/gns3-lab
 book/installation
 book/inventory
+book/config-file
 ```
