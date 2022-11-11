@@ -18,7 +18,7 @@ extensions = [
         "myst_parser",
         "sphinx.ext.duration",
         "sphinx.ext.autosectionlabel",
-        "sphinx.exe.autodoc",
+        "sphinx.ext.autodoc",
         "nbsphinx",
         ]
 
