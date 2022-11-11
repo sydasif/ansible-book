@@ -8,11 +8,11 @@ readme = "README.md"
 [project.optional.dependencies]
 
 doc = [
-    "Sphinx = 4.5.0"
-    "myst-parser = 0.18.1",
+    "Sphinx~=4.5.0"
+    "myst-parser=0.18.1",
 ]    
 
 
 [build-system]
-requires = ["flit_core >=3.2,<4"]
-build-backend = "flit_core.buildapi"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
