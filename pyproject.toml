@@ -1,9 +1,13 @@
 [tool.poetry]
 name = "ansible book"
-version = "1.0"
+version = "0.1.0"
 description = "Ansible Quick Start Guide"
 authors = ["syed asif <sydasif78@gmail.com>"]
 readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
 
 [build-system]
 requires = ["poetry-core"]
