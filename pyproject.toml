@@ -5,9 +5,12 @@ description = "Ansible Quick Start Guide"
 authors = ["syed asif <sydasif78@gmail.com>"]
 readme = "README.md"
 
-[tool.poetry.dependencies]
-Sphinx = "^5.3.0"
-myst-parser = "^0.18.1"
+[project.optional.dependencies]
+
+doc = [
+    "Sphinx = 5.3.0",
+    "myst-parser = 0.18.1",
+]    
 
 
 [build-system]
