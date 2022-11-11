@@ -8,6 +8,7 @@ readme = "README.md"
 [project.optional.dependencies]
 
 doc = [
+    "Sphinx = 4.5.0"
     "myst-parser = 0.18.1",
 ]    
 
