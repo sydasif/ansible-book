@@ -9,10 +9,9 @@ readme = "README.md"
 
 doc = [
     "myst-parser = 0.18.1",
-    "wheel"
 ]    
 
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
