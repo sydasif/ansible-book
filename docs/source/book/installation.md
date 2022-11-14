@@ -38,7 +38,7 @@ To run an Ad-hoc command or Ansible playbook it is mandatory to establish a manu
 
 Instead of manually connecting and running a command on the network device, you can retrieve its configuration with a single, stripped-down Ansible command as below:
 
-```json
+```console
 $ ansible all -i 9.9.9.100, -c network_cli -u admin -k -m ping -e ansible_network_os=ios
 SSH password:
 9.9.9.100 | SUCCESS => {
@@ -74,8 +74,8 @@ Ansible modules are generally idempotent. This means that the module can be exec
 
 The raw module is the module that doesn’t translate our commands (not going through the module subsystem), Ansible purely transfer our commands on remote devices via SSH. A common case is installing python on a system without python installed by default or devices such as routers that do not have any Python installed. The raw module is mainly used for monitoring and troubleshooting.
 
-```json
-$ ansible all -i 9.9.9.100, -u admin -m raw -a "sh ver" -k                                              ─╯
+```console
+$ ansible all -i 9.9.9.100, -u admin -m raw -a "sh ver" -k
 SSH password:
 9.9.9.100 | CHANGED | rc=0 >>
 Cisco IOS Software, vios_l2 Software (vios_l2-ADVENTERPRISEK9-M), Version 15.2(CML_NIGHTLY_20180619)FLO_DSGS7, EARLY DEPLOYMENT DEVELOPMENT BUILD, synced to  V152_6_0_81_E
@@ -133,7 +133,7 @@ Configuration register is 0x101
 
 We probably don’t want to see every line of the output from “show version” command. So we can use grep, to filter, the name of the device and also the version.
 
-```json
+```console
 $ ansible all -i 9.9.9.100, -u admin -m raw -a "sh ver" -k | grep "CHANGED\|Version"                    ─╯
 SSH password:
 9.9.9.100 | CHANGED | rc=0 >>
@@ -142,8 +142,8 @@ Cisco IOS Software, vios_l2 Software (vios_l2-ADVENTERPRISEK9-M), Version 15.2(C
 
 One more example:
 
-```json
- ansible all -i 9.9.9.101,9.9.9.102 -u admin -m raw -a "sh ip int bri | ex unass" -k                   ─╯
+```console
+ ansible all -i 9.9.9.101,9.9.9.102 -u admin -m raw -a "sh ip int bri | ex unass" -k
 SSH password:
 9.9.9.101 | CHANGED | rc=0 >>
 
@@ -161,9 +161,9 @@ Shared connection to 9.9.9.102 closed.
 More practical examples are below:
 
 ```console
-ansible all -m raw -u admin -a “show running-config | include username” -k
-ansible all -m raw -u admin -a “show ip interface brief” -k
-ansible all -m raw -u admin -a “show ip interface brief | exclude unass” -k
-ansible all -m raw -u admin -a “show arp” -k
-ansible all -m raw -u admin -a “show mac address-table | include ” -k
+$ ansible all -m raw -u admin -a “show running-config | include username” -k
+$ ansible all -m raw -u admin -a “show ip interface brief” -k
+$ ansible all -m raw -u admin -a “show ip interface brief | exclude unass” -k
+$ ansible all -m raw -u admin -a “show arp” -k
+$ ansible all -m raw -u admin -a “show mac address-table | include ” -k
 ```
