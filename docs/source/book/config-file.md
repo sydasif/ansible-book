@@ -33,7 +33,15 @@ ansible_connection=network_cli
 
 When we use the ansible --version command, it will show the exact location of the configuration file, which by default is in /etc/ansible/ansible.cfg, first line shows the location of Ansible configuration file.
 
-![ansible-ver](../images/ansible-ver.png)
+```console
+$ ansible --version
+ansible 2.9.27
+  config file = /home/syed/ansible.cfg
+  configured module search path = ['/home/syed/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /home/syed/.local/lib/python3.10/site-packages/ansible
+  executable location = /home/syed/.local/bin/ansible
+  python version = 3.10.6 (main, Aug 10 2022, 11:40:04) [GCC 11.3.0]
+```
 
 Fortunately, we can overrides both default Ansible configuration file and inventory file for each project, since each project may have its own configuration parameters and a different list of devices to be managed remotely. It is therefore recommended to create a folder with its own configuration and inventory file for each project.
 
