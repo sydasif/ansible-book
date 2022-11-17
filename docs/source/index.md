@@ -3,10 +3,6 @@
 % You can adapt this file completely to your liking, but it should at least
 % contain the root `toctree` directive.
 
-```{include} ../../README.md
-:relative-images:
-```
-
 ```{warning}
 This is a quick start guide for Ansible and is under development.
 ```
@@ -15,10 +11,5 @@ This is a quick start guide for Ansible and is under development.
 :caption: 'Table of Contents:'
 :maxdepth: 2
 
-Ansible introduction <book/introduction>
-book/ansible-architecture
-book/gns3-lab
-book/installation
-book/inventory
-book/config-file
+ch-01/index
 ```
