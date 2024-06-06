@@ -9,10 +9,10 @@ This is a quick start guide for Ansible and is under development.
 ```{toctree}
 :maxdepth: 1
 
-Ansible introduction <book/introduction>
-ansible-architecture
-gns3-lab
-installation
-inventory
-config-file
+01_intro
+02_intro
+03_install
+04_lab
+05_confg
+06_inv
 ```
